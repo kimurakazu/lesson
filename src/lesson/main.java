@@ -27,9 +27,14 @@ public class main {
 		
 		int kokugo = 70;
 		int sansu = 75;
-		double avg = (kokugo + sansu) / 2.0;
-		System.out.println("平均点は" + avg);
+		double avg = (kokugo + sansu) / 2.0; //自動型変換
 		
+		System.out.println("平均点は" + (double)(kokugo + sansu) / 2); //キャスト変換
+		System.out.println("平均点は" + avg + "\n");
+		
+		
+		int num1 = 3,num2 = 5;
+		System.out.println("足し算の結果は" + (num1 + num2));
 	}
 
 }
