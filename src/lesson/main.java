@@ -45,7 +45,7 @@ public class main {
 		
 		String age = "31";
 		int nAge = Integer.parseInt(age);
-		System.out.println((age+1) + "\n");
+		System.out.println(age+1);
 		
 		int r = new java.util.Random().nextInt(99);
 		System.out.println(r + "\n");
