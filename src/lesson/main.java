@@ -34,7 +34,25 @@ public class main {
 		
 		
 		int num1 = 3,num2 = 5;
-		System.out.println("足し算の結果は" + (num1 + num2));
+		System.out.println("足し算の結果は" + (num1 + num2)+"\n");
+		
+		System.out.print("私は");
+		System.out.print("きむら");
+		System.out.println("です");
+		
+		int m = Math.max(10,20);
+		System.out.println(m);
+		
+		String age = "31";
+		int nAge = Integer.parseInt(age);
+		System.out.println((age+1) + "\n");
+		
+		int r = new java.util.Random().nextInt(99);
+		System.out.println(r + "\n");
+		
+		//サイコロ
+		int dice = ( new java.util.Random().nextInt(6) ) + 1;
+		System.out.println("サイコロの出目は" + dice);
 	}
 
 }
