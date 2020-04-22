@@ -9,7 +9,7 @@ public class ifsample {
 			System.out.println("A");
 		}else if(num >= 60) {
 			System.out.println("B");
-		}	else {
+		}else {
 			System.out.println("C");
 		}
 	}
