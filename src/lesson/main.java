@@ -3,56 +3,64 @@ package lesson;
 public class main {
 
 	public static void main(String[] args) {
-		int tuki =4,hi = 22;
-		System.out.println("今日は" + tuki + "月" + hi + "日");
+		/*System.out.println("番号を入力：");
+		int num = new java.util.Scanner(System.in).nextInt();
+		if(num == 1) {
+			System.out.println("コーラ");
+		}else if(num == 2) {
+			System.out.println("コーヒー");
+		}else if(num == 3) {
+			System.out.println("水");
+		}else {
+			System.out.println("番号が違います");
+		}
 		
-		double p = 3.14;
-		System.out.println("円周率は" + p + "です。");
-		 
-		int a = 20 ,b;
-		b = a + 5;
-		System.out.println(a);
-		System.out.println(b);
-		System.out.println("今日は\"四月\"です");
-		System.out.println("\\100\n");
-
-		System.out.println("C:に\"フォルダ\"を作成\n");
+		switch(num) {
+		case 1:
+			System.out.println("コーラ");
+			break;
+			
+		case 2:
+			System.out.println("コーヒー");
+			break;
+			
+		case 3:
+			System.out.println("水");
+			break;
+			
+		default:
+			System.out.println("番号が違います");
+			
+		}*/
 		
-		int num = 10,amari= num % 3;
-		System.out.println(num + "/3の余りは" + amari + "\n");
-		
-		double d = 3;
-		int n = (int)3.2;
-		String s= "ベスト" + 3;
-		
-		int kokugo = 70;
-		int sansu = 75;
-		double avg = (kokugo + sansu) / 2.0; //自動型変換
-		
-		System.out.println("平均点は" + (double)(kokugo + sansu) / 2); //キャスト変換
-		System.out.println("平均点は" + avg + "\n");
-		
-		
-		int num1 = 3,num2 = 5;
-		System.out.println("足し算の結果は" + (num1 + num2)+"\n");
-		
-		System.out.print("私は");
-		System.out.print("きむら");
-		System.out.println("です");
-		
-		int m = Math.max(10,20);
-		System.out.println(m);
-		
-		String age = "31";
-		int nAge = Integer.parseInt(age);
-		System.out.println(age+1);
-		
-		int r = new java.util.Random().nextInt(99);
-		System.out.println(r + "\n");
-		
-		//サイコロ
-		int dice = ( new java.util.Random().nextInt(6) ) + 1;
-		System.out.println("サイコロの出目は" + dice);
+		//月の日数
+		System.out.println("月を入力：");
+		int tuki = new java.util.Scanner(System.in).nextInt();
+		switch (tuki) {
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+			System.out.println("31日");
+			break;
+			
+		case 2:
+			System.out.println("29日");
+			break;
+				
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			System.out.println("30日");
+			break;
+			
+		default:
+			System.out.println("存在しません。");
+		}
 	}
 
 }
