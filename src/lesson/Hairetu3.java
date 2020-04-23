@@ -38,7 +38,7 @@ public class Hairetu3 {
 		for (int num : nums) {
 			if(max < num) max = num;
 		}
-		System.out.println("最大値は" + max);
+		System.out.println("最大値=" + max);
 
 	}
 
