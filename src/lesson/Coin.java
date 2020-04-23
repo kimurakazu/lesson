@@ -6,10 +6,9 @@ public class Coin {
 		int[] coins = {500,100,50,10,5,1};
 		
 		int sum = 0;
-		int num = 0;
-		for(int coin : coins ) {
+		for(int coin : coins ) {;
 			System.out.println(coin + "円玉は何枚？：");
-			num = new java.util.Scanner(System.in).nextInt();
+			int num = new java.util.Scanner(System.in).nextInt();
 			sum += num * coin;
 		}
 		System.out.println("合計は" + sum + "円");
