@@ -10,6 +10,7 @@ public class Main {
 		s.sansu = 70;
 		s.shakai = 50;
 		s.show();
+		System.out.println("合計：" + s.goukei() + "点 平均：" + s.heikin() + "点");
 		
 //		Sankaku s = new Sankaku();
 //		s.x = 6;
