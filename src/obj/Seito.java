@@ -4,6 +4,15 @@ public class Seito {
 	String name;
 	int kokugo,sansu,shakai;
 	
+
+	
+	public Seito(String name, int kokugo, int sansu, int shakai) {
+		this.name = name;
+		this.kokugo = kokugo;
+		this.sansu = sansu;
+		this.shakai = shakai;
+	}
+
 	public int goukei(){
 		return kokugo+sansu+shakai;
 	}
