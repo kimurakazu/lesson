@@ -7,14 +7,14 @@ public class Chugakusei extends Seito {
 		super(name, kokugo, sansu, shakai);
 		English = english;
 	};
-	
+
 	public int goukei(){
-		return kokugo+sansu+shakai+English;
+		return super.goukei()+English;
 	}
-	
+
 	public void goukeiShow() {
-		System.out.println(name + " 合計"+ goukei() + "点");	
+		System.out.println(name + " 合計"+ goukei() + "点");
 	}
-	
+
 
 }
