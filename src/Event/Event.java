@@ -1,7 +1,6 @@
 package Event;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -11,19 +10,22 @@ public class Event {
 	private Date hi = new Date();
 	private List<Sankasha> sanka = new ArrayList<>();
 
+	//イベントのコンストラクト イベントの設定、日付の設定
 	public Event(String name) {
 		this.name = name;
 
-		//日付の設定 ここを消すと今日の日付になる
-		Calendar c = Calendar.getInstance();
-		c.set(2020,5-1,8);
-		hi = c.getTime();
+//		//日付の設定 ここを消すと今日の日付になる
+//		Calendar c = Calendar.getInstance();
+//		c.set(2020,5-1,8);
+//		hi = c.getTime();
 	}
 
+	//参加者登録のメソッド
 	public void add(Sankasha s) {
 		sanka.add(s);
 	}
 
+	//詳細表示のメソッド
 	public void show() {
 		//イベントの名前表示
 		System.out.println(this.name);
@@ -34,7 +36,7 @@ public class Event {
 
 		//参加者の表示
 		for(Sankasha s : sanka) {
-			System.out.println(s.getName() + " " + s.getAge());
+			System.out.println(s.getName() + " " + s.getAge() + "歳");
 		}
 	}
 
