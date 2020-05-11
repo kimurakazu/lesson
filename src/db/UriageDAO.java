@@ -46,7 +46,7 @@ public class UriageDAO {
 		return list;
 	}
 
-	//find
+	//findByUid
 	public Uriage findByUid(int uid) {
 			Uriage u = null;
 			try (Connection con = DriverManager.getConnection(URL,USER,PASS);){
@@ -72,6 +72,32 @@ public class UriageDAO {
 			return u;
 		}
 
+	//findBySid
+	public ArrayList<Uriage> findBySid(int sid) {
+				ArrayList<Uriage> list = new ArrayList<>();
+				try (Connection con = DriverManager.getConnection(URL,USER,PASS);){
+
+					String sql = "select * from Uriage where sid = ?";
+					PreparedStatement stmt = con.prepareStatement(sql);
+					stmt.setInt(1, sid);
+
+					ResultSet rs = stmt.executeQuery();
+
+					while(rs.next()){
+						int uid = rs.getInt("uid");
+						int kosu = rs.getInt("kosu");
+						Date hi = rs.getDate("hi");
+						list.add(new Uriage(uid,sid,kosu,hi));
+					}
+
+					stmt.close();
+
+				} catch (SQLException e) {
+					System.out.println("findBySidエラー" + e.getMessage());
+				}
+				return list;
+			}
+	
 	//Insert
 	public void insert(Uriage u) {
 		try (Connection con = DriverManager.getConnection(URL,USER,PASS);){
