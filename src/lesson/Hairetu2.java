@@ -1,19 +1,33 @@
 package lesson;
 
 public class Hairetu2 {
+	
+	public static void showKion (double kion) {
+		System.out.println(kion + "度");
+	}
 
 	public static void main(String[] args) {
+		
+		;
+		
+		double[] kions = {15.5,20.1,18.3};
+		
+		
+		for (double kion : kions) {
+			showKion(kion);
+		}
+			
 		/*int[] prices = {100,200,150};
 		for (int value:prices) {
 			System.out.println(value);
 		}
 		System.out.println();*/
 		
-		String[] names = {"コーラ","コーヒー","水"};
+		/*String[] names = {"コーラ","コーヒー","水"};
 		for (String n : names) {
 			System.out.println(n + "は" + n.length() + "文字");
 		}
-		System.out.println();
+		System.out.println();*/
 		
 		/*int[] points = {80,90,60,70,50};
 		int sum = 0;
@@ -35,5 +49,7 @@ public class Hairetu2 {
 		
 		
 	}
+	
+
 
 }

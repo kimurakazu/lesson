@@ -42,17 +42,15 @@ public class Main {
 //		e.menseki();
 //		e.enshu();
 		
-//		DnsiMoney dm = new DnsiMoney();
-//		dm.kingaku = 0;
-//		dm.point = 0;
-//		dm.charge(1000);	
-//		dm.buy(500);
-//		System.out.println("残高=" + dm.kingaku);
-//		System.out.println("ポイント=" + dm.point);
-//		System.out.println();
-//		dm.change();
-//		System.out.println("残高=" + dm.kingaku);
-//		System.out.println("ポイント=" + dm.point);
+		DnsiMoney dm = new DnsiMoney(0,0);
+		dm.charge(1000);	
+		dm.buy(500);
+		System.out.println("残高=" + dm.getKingaku());
+		System.out.println("ポイント=" + dm.getPoint());
+		System.out.println();
+		dm.change();
+		System.out.println("残高=" + dm.getKingaku());
+		System.out.println("ポイント=" + dm.getPoint());
 		
 //		Hizuke toDay = new Hizuke();
 //		toDay.hi = 27;
@@ -72,14 +70,27 @@ public class Main {
 //		n.show();
 		//n.showJikan();
 		
-		//Book b = new Book("教科書",1000,"ミナト");
-		//b.show();
+//		Book b = new Book("それから",500,"夏目漱石");
+//		
+//		Uriage uri = new Uriage();
+//		uri.num = 5;
+//		
+//		b.show();
 		
-		Nichiji n = new Nichiji(4,28,15,5);
-		n.show();
+//		Nichiji n = new Nichiji(4,28,15,5);
+//		n.show();
 		
 //		SeiSankaku ss = new SeiSankaku(6);
 //		ss.menseki();
+		
+//		En e1 = new En(5);
+//		En e2 = new En(5);
+//		
+//		if(e1.equals(e2)) {
+//			System.out.println("同じ");
+//		}else {
+//			System.out.println("違う");
+//		}
 
 	}
 

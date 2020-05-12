@@ -19,7 +19,7 @@ public class MemberMain {
 		System.out.println();
 		
 		//mid検索
-		System.out.println("検索したいmidを入力してください：");
+		System.out.println("住所検索したいmidを入力してください：");
 		Member m = mDao.findByMid(new java.util.Scanner(System.in).nextInt());
 		System.out.println(m.getAdr());
 		

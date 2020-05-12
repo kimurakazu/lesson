@@ -1,13 +1,13 @@
-package renal;
+package rental;
 
 public class Book extends Item {
-	
+
 	public Book(String name, int days) {
 		super(name,days);
 	}
-	
+
 	public int getPrice() {
-		return days * 50;
+		return this.getDays() * 50;
 	}
-	
+
 }

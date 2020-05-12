@@ -22,6 +22,8 @@ public class Uriagecheck {
 		for(Uriage u :list) {
 			System.out.println(u.getHi() + "   " + u.getKosu());
 		}
+		
+		
 
 	}
 

@@ -4,13 +4,23 @@ public class LoopSample {
 
 	public static void main(String[] args) {
 	
+		/*int sum = 0;
+		for(;;) {
+			System.out.println("入力:");
+			int a = new java.util.Scanner(System.in).nextInt();
+			if(a == 0) break;
+			sum += a;
+			
+		}
+		System.out.println("合計" + sum);*/
+		
 		//数を入力
 		//1からその数まで表示
-		System.out.println("数値を入力：");
+		/*System.out.println("数値を入力：");
 		int num = new java.util.Scanner(System.in).nextInt();
 		for (int i = 1; i <= num; i++) {
 			System.out.println(i);
-		}
+		}*/
 		
 		/*while(true) {
 			System.out.println("数値を入力：");

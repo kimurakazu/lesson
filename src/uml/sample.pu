@@ -1,0 +1,6 @@
+@startuml
+
+aaa -> bbb
+aaa -> ccc
+
+@enduml

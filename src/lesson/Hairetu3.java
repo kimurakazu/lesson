@@ -1,10 +1,16 @@
 package lesson;
+import java.util.Arrays;
 
 public class Hairetu3 {
 
 	public static void main(String[] args) {
 		//int型の配列 nums に 8,5,9,2,4 を入れる
 		int[] nums = {8,5,9,2,4};
+		
+		//整列
+		Arrays.sort(nums);
+		//すべての要素を0にする
+		Arrays.fill(nums, 0);
 		
 		//すべて表示
 		for (int num : nums) {

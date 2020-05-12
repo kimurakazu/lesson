@@ -97,7 +97,7 @@ public class UriageDAO {
 				}
 				return list;
 			}
-	
+
 	//Insert
 	public void insert(Uriage u) {
 		try (Connection con = DriverManager.getConnection(URL,USER,PASS);){
@@ -114,6 +114,42 @@ public class UriageDAO {
 
 		} catch (SQLException e) {
 			System.out.println("insert" + e.getMessage());
+		}
+	}
+
+	//update
+	public void update(Uriage u) {
+		try (Connection con = DriverManager.getConnection(URL,USER,PASS);){
+
+			String sql = "update uriage set sid = ?,kosu=?,hi=curdate where uid=?";
+			PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setInt(1,u.getSid());
+			stmt.setInt(2, u.getKosu());
+			stmt.setInt(3, u.getUid());
+
+			stmt.execute();
+
+			stmt.close();
+
+		} catch (SQLException e) {
+			System.out.println("insert" + e.getMessage());
+		}
+	}
+
+	//delete
+	public void delete(int uid) {
+		try (Connection con = DriverManager.getConnection(URL,USER,PASS);){
+
+			String sql = "delete from Uriage where sid = ?";
+			PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setInt(1, uid);
+
+			stmt.executeUpdate();
+
+			stmt.close();
+
+		} catch (SQLException e) {
+			System.out.println("deleteエラー" + e.getMessage());
 		}
 	}
 }

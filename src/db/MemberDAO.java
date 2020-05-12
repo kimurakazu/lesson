@@ -88,4 +88,24 @@ public class MemberDAO {
 			System.out.println("insert" + e.getMessage());
 		}
 	}
+
+	//update
+	public void update(Member m) {
+		try (Connection con = DriverManager.getConnection(URL,USER,PASS);){
+
+			String sql = "update uriage set name = ?,adr=?,where uid=?";
+			PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setInt(3,m.getMid());
+			stmt.setString(1, m.getName());
+			stmt.setString(2, m.getAdr());
+
+			stmt.execute();
+
+			stmt.close();
+
+		} catch (SQLException e) {
+			System.out.println("insert" + e.getMessage());
+		}
+	}
+
 }

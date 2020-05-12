@@ -1,4 +1,4 @@
-package renal;
+package rental;
 import java.util.ArrayList;
 
 public class Rental {

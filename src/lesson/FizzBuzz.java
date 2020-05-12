@@ -4,17 +4,20 @@ public class FizzBuzz {
 
 	public static void main(String[] args) {
 		for (int i = 1; i<=30; i++) {
-			if(i % 15 == 0) {
-				System.out.println("FizzBuzz");
-			}else if (i % 3 == 0){
-				System.out.println("Fizz");
-			}else if (i % 5 == 0) {
-				System.out.println("Buzz");
-			}else {
-				System.out.println(i);
-			}
+			System.out.println(getFizzBuzz(i));
 		}
 
 	}
-
+	
+	public static String getFizzBuzz (int num) {
+		if(num % 15 == 0) {
+			return "FizzBuzz";
+		}else if (num % 3 == 0){
+			return "Fizz";
+		}else if (num % 5 == 0) {
+			return "Buzz";
+		}else {
+			return String.valueOf(num);
+		}
+	}
 }

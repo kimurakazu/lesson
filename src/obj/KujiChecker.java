@@ -1,4 +1,4 @@
-package sukkiri;
+package obj;
 
 public class KujiChecker {
 	int en;

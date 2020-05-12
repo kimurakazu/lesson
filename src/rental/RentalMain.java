@@ -1,4 +1,4 @@
-package renal;
+package rental;
 
 public class RentalMain {
 
